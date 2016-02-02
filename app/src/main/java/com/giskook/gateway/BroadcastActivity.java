@@ -18,10 +18,10 @@ public class BroadcastActivity extends Activity {
         String ipAddr = homeornot.DoText();
         if(ipAddr.isEmpty()){
             Toast.makeText(this.getApplicationContext(),"not at home", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(this, LoginActivity.class));
+            startActivity(new Intent(this, MainActivity.class));
         }else {
             Toast.makeText(this.getApplicationContext(),"at home", Toast.LENGTH_SHORT).show();
-            startActivity(new Intent(this, MainActivity.class));
+            startActivity(new Intent(this, LoginActivity.class));
         }
         this.finish();
     }
